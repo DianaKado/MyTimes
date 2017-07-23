@@ -1,5 +1,10 @@
 header {
   display: inline-flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
@@ -8,11 +13,11 @@ header {
   align-items: center;
   width: 100%;
 }
-nav {
+header nav {
   text-align: right;
   width: 100%;
 }
-ul {
+header ul {
   display: inline-flex;
   align-items: flex-start;
   padding-right: 35px;
@@ -20,12 +25,11 @@ ul {
 li {
   padding: 0px 12px;
   display: inline-block;
-  style: none;
 }
 a {
   color: black;
 }
-h1, h2, h3, h5, p {
+h1, h2, h3, h5, h6, p {
   font-family: Georgia;
 }
 h1 {
@@ -48,9 +52,41 @@ h4 {
 h5 {
   font-size: 16px;
 }
-p {
+h6 {
+  font-size: 16px;
+  color: white;
+  padding: 0;
+}
+main p {
   font-size: 17px;
   color: black;
+}
+footer {
+  display: flex;
+  position: relative;
+  top: 150px;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: MediumAquamarine;
+  min-height: 300px;
+  min-width: 1220px;
+  width: 100%;
+  overflow: scroll;
+}
+footer p, footer ul {
+  font-family: Verdana;
+  font-size: 12px;
+  margin: 0px;
+  display: inline-flex;
+  justify-content: center;
+}
+footer ul li {
+  display: inline-block;
+  justify-content: center;
+  padding: 0px 12px;
+  margin: 0px;
 }
 .bites ul {
   flex-direction: column;
@@ -74,8 +110,12 @@ p {
 }
 .main {
   display: flex;
+  position: relative;
+  top: 80px;
+  z-index: 10;
   justify-content: center;
-  min-width: 1200px;
+  min-width: 1220px;
+  overflow: scroll;
 }
 .column {
   display: flex;
@@ -122,6 +162,10 @@ p {
 }
 .bites {
   display: flex;
+}
+.bottomnav {
+  display: inline-flex;
+  align-items: center;
 }
 #headline {
   background-image: url(../../resources/images/img-story-main.png);
