@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+}
+/* setting the body margin to zero got rid of gaps on sides of footer. */
 header {
   display: inline-flex;
   position: fixed;
@@ -70,14 +74,8 @@ footer {
   flex-direction: column;
   background-color: MediumAquamarine;
   min-height: 300px;
-  width: 100%;
-  /*
-  left: 0;
-  margin: 0px;
-  padding: 0px;
-
-  Setting left, margin and padding to 0 doesn't get rid of gaps on sides.
-  */
+  max-width: 100%;
+  margin: auto;
 }
 footer p, footer ul {
   font-family: Verdana;
@@ -182,6 +180,7 @@ footer ul li {
 .bottomnav {
   display: inline-flex;
   align-items: center;
+  max-width: 100%;
 }
 #headline {
   background-image: url(../../resources/images/img-story-main.png);
